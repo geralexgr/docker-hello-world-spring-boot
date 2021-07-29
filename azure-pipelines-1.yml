@@ -15,10 +15,8 @@ stages:
 - stage: Build
   displayName: Build image
   jobs:
-  - job: Build
+  - job: BuildPush
     displayName: Build
-    pool:
-      vmImage: ubuntu-latest
     steps:
     - task: Docker@2
       displayName: Build an image
