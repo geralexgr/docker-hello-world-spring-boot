@@ -25,3 +25,9 @@ stages:
         repository: 'geralexgr/aksjavarepo'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
+        tags: latest
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
