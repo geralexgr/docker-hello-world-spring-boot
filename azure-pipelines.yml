@@ -2,7 +2,7 @@
 - task: Docker@2
   inputs:
     containerRegistry: 'geralexgr-docker-repo'
-    repository: 'JavaAKSrepo'
+    repository: 'aksjavarepo'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 # Build a Docker image
