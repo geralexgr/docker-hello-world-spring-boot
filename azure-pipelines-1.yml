@@ -15,8 +15,8 @@ stages:
 - stage: Build
   displayName: Build image
   jobs:
-  - job: BuildPush
-    displayName: Build
+  - job: pushToDocker
+    displayName: pushToDocker
     steps:
     - task: Docker@2
       displayName: Build an image
