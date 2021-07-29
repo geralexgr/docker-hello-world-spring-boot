@@ -19,4 +19,4 @@ COPY --from=maven_build /tmp/target/hello-world-0.1.0.jar /data/hello-world-0.1.
 
 CMD ["java", "-jar", "/data/hello-world-0.1.0.jar"]
 
-EXPOSE 8181
+EXPOSE 8080
