@@ -9,7 +9,7 @@ public class HelloController {
     
     @RequestMapping("/")
     public String index() {
-        return "Running a spring boot application on AKS\n";
+        return "Running a spring boot application through Azure Devops\n";
     }
     
 }
